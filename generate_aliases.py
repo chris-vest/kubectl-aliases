@@ -44,14 +44,36 @@ def main():
         ]
 
     res = [
-        ('po', 'pods', ['g', 'd', 'rm'], None),
-        ('dep', 'deployment', ['g', 'd', 'rm'], None),
-        ('svc', 'service', ['g', 'd', 'rm'], None),
-        ('ing', 'ingress', ['g', 'd', 'rm'], None),
+        ('cj', 'cronjob', ['g', 'd', 'rm'], None),
         ('cm', 'configmap', ['g', 'd', 'rm'], None),
-        ('sec', 'secret', ['g', 'd', 'rm'], None),
+        ('cr', 'clusterrole', ['g', 'd', 'rm'], None),
+        ('crb', 'clusterrolebinding', ['g', 'd', 'rm'], None),
+        ('dep', 'deployment', ['g', 'd', 'rm'], None),
+        ('ds', 'daemonset', ['g', 'd', 'rm'], None),
+        ('ep', 'endpoints', ['g', 'd', 'rm'], None),
+        ('ing', 'ingress', ['g', 'd', 'rm'], None),
+        ('job', 'job', ['g', 'd', 'rm'], None),
+        ('hpa', 'horizontalpodautoscaler', ['g', 'd', 'rm'], None),
         ('no', 'nodes', ['g', 'd'], ['sys']),
         ('ns', 'namespaces', ['g', 'd', 'rm'], ['sys']),
+        ('po', 'pods', ['g', 'd', 'rm'], None),
+        ('pvc', 'persistentvolumeclaim', ['g', 'd', 'rm'], None),
+        ('pv', 'persistentvolume', ['g', 'd', 'rm'], None),
+        ('r', 'role', ['g', 'd', 'rm'], None),
+        ('rb', 'rolebinding', ['g', 'd', 'rm'], None),
+        ('rs', 'replicaset', ['g', 'd', 'rm'], None),
+        ('sa', 'serviceaccount', ['g', 'd', 'rm'], None),
+        ('sc', 'storageclass', ['g', 'd', 'rm'], None),
+        ('sts', 'statefulset', ['g', 'd', 'rm'], None),
+        ('svc', 'service', ['g', 'd', 'rm'], None),
+        ('sec', 'secret', ['g', 'd', 'rm'], None),
+        # STRIMZI
+        ('k', 'kafka', ['g', 'd', 'rm'], None),
+        ('kc', 'kafkaconnect', ['g', 'd', 'rm'], None),
+        ('kcs21', 'kafkaconnects2i', ['g', 'd', 'rm'], None),
+        ('kmm', 'kafkamirrormaker', ['g', 'd', 'rm'], None),
+        ('kt', 'kafkatopic', ['g', 'd', 'rm'], None),
+        ('ku', 'kafkauser', ['g', 'd', 'rm'], None),
         ]
     res_types = [r[0] for r in res]
 

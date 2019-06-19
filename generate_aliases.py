@@ -70,10 +70,7 @@ def main():
         # STRIMZI
         ('k', 'kafka', ['g', 'd', 'rm'], None),
         ('kc', 'kafkaconnect', ['g', 'd', 'rm'], None),
-        ('kcs21', 'kafkaconnects2i', ['g', 'd', 'rm'], None),
-        ('kmm', 'kafkamirrormaker', ['g', 'd', 'rm'], None),
         ('kt', 'kafkatopic', ['g', 'd', 'rm'], None),
-        ('ku', 'kafkauser', ['g', 'd', 'rm'], None),
         ]
     res_types = [r[0] for r in res]
 

@@ -34,6 +34,7 @@ def main():
 
     ops = [
         ('a', 'apply --recursive -f', None, None),
+        ('c', 'config', None, ['sys']),
         ('ex', 'exec -i -t', None, None),
         ('lo', 'logs -f', None, None),
         ('p', 'proxy', None, ['sys']),
@@ -71,6 +72,9 @@ def main():
         ('k', 'kafka', ['g', 'd', 'rm'], None),
         ('kc', 'kafkaconnect', ['g', 'd', 'rm'], None),
         ('kt', 'kafkatopic', ['g', 'd', 'rm'], None),
+        # CONFIG
+        ('cc', 'current-context', ['c'], None),
+        ('uc', 'use-context', ['c'], None),    
         ]
     res_types = [r[0] for r in res]
 

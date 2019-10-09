@@ -74,7 +74,8 @@ def main():
         ('kt', 'kafkatopic', ['g', 'd', 'rm'], None),
         # CONFIG
         ('cc', 'current-context', ['c'], None),
-        ('uc', 'use-context', ['c'], None),    
+        ('uc', 'use-context', ['c'], None),
+        ('gc', 'get-contexts', ['c'], None),
         ]
     res_types = [r[0] for r in res]
 
